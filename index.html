@@ -1,0 +1,289 @@
+TYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Surdib Prakritik Products</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .container {
+            max-width: 100%;
+        }
+        .grid-cols-1 {
+            grid-template-columns: 1fr;
+        }
+        .md\:grid-cols-2 {
+            @media (min-width: 768px) {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        .lg\:grid-cols-4 {
+            @media (min-width: 1024px) {
+                grid-template-columns: repeat(4, 1fr);
+            }
+        }
+        .product-card {
+            margin-bottom: 1.5rem;
+        }
+        .flex-wrap {
+            flex-wrap: wrap;
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+    <header class="bg-white shadow-md py-4">
+        <div class="container mx-auto px-4 flex justify-between items-center">
+            <a href="index.html" class="flex items-center">
+                <img src="https://media-hosting.imagekit.io/52b3272e471a46d5/Screenshot%20(69).png?Expires=1841228822&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=HRMjF-zBj946pTRyPtjRjfzkdlJkwTE6RWObwWFoaxTW-wGXBlnB~OsopeETsIpEz7evoudDw6U-KE~Yr6nFGzmD6Ikj8q95YIP9wJk74BVrAoJdAVhI552gNzkBT7VsJJEvHPodDRo~aBmXTxt5uknaklAQZZwx81aEyQFRXeZxB7qO4g58Tx1W7rkZxFZi9kPfvM2ILJOMR61K7Ekq-KECLd9NsK~syofEvHMMH5ZqbrhLSiq-hTTSiYQlYDjLHBzW7uh8zerzucWIQVJoqclVsYjny3vsKZESzItZTkfWAvcpeVPEk3NQI-AiR9SrFvoFT06RVty56eRgO3rfAw__" alt="Surdib Prakritik Products Logo" class="h-16 mr-4">
+                <div class="flex flex-col">
+                    <h1 class="text-xl font-semibold text-gray-800" data-original="सुरभि प्राकृतिक प्रोडक्ट्स">सुरभि प्राकृतिक प्रोडक्ट्स</h1>
+                    <p class="text-gray-600 text-sm" data-original="खादी इंडिया">खादी इंडिया</p>
+                </div>
+            </a>
+            <nav class="hidden md:block">
+                <ul class="flex space-x-6">
+                    <li><a href="index.html" class="hover:text-blue-600 text-gray-700 font-semibold">Home</a></li>
+                    <li><a href="#benefits" class="hover:text-blue-600 text-gray-700 font-semibold">Benefits</a></li>
+                    <li><a href="#products" class="hover:text-blue-600 text-gray-700 font-semibold">Products</a></li>
+                    <li><a href="#contact" class="hover:text-blue-600 text-gray-700 font-semibold">Contact Us</a></li>
+                    <li>
+                        <button id="translate-button" class="bg-gray-200 hover:bg-gray-300 text-gray-700 font-bold py-2 px-4 rounded-full text-sm">
+                            Translate to English
+                        </button>
+                    </li>
+                </ul>
+            </nav>
+            <div class="md:hidden">
+                <button id="hamburger-button" class="text-gray-700 focus:outline-none">
+                    ☰
+                </button>
+                <div id="mobile-menu" class="hidden absolute top-16 right-0 bg-white shadow-lg rounded-md py-2 px-4 space-y-2">
+                    <a href="index.html" class="block hover:text-blue-600 text-gray-700 font-semibold">Home</a>
+                    <a href="#benefits" class="block hover:text-blue-600 text-gray-700 font-semibold">Benefits</a>
+                    <a href="#products" class="block hover:text-blue-600 text-gray-700 font-semibold">Products</a>
+                    <a href="#contact" class="block hover:text-blue-600 text-gray-700 font-semibold">Contact Us</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero bg-green-100 text-center py-16 rounded-lg shadow-md mb-8">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-green-800 mb-4" data-original="प्राकृतिक पेंट अपनाये और अपने घर की शोभा बढाए">
+                प्राकृतिक पेंट अपनाये और अपने घर की शोभा बढाए
+            </h2>
+            <p class="text-gray-700 mb-4" data-original="गाय के गोबर से बना प्राकृतिक पेंट. ★ परिवार की सुरक्षा के लिए">
+                गाय के गोबर से बना प्राकृतिक पेंट. ★ परिवार की सुरक्षा के लिए
+            </p>
+            <p class="text-gray-700 mb-6 font-medium" data-original="ECO-FRIENDLY COW DUNG PAINT">ECO-FRIENDLY COW DUNG PAINT</p>
+            <img src="https://media-hosting.imagekit.io/4b1ac49354d646e4/Screenshot%20(63).png?Expires=1840139585&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=HJjl2CnwbiolUp6DRpWY3LVx0JYv03DDljW6lAHWpdaiAiaCGkL54m737l0zwOZRsrXz~CQ4MJa-lH~LcN-76hARVItuf00Zxy6dbdEsdQOevzWXNUY5eo1WdnaUK~CX-egEOBP~Rp-57nBqhUHpoWurVNlfBOWRztLI3uZFZv8YIJBQRvDlpRHIlKdc3IRNBST~19rcAjwtDeIcY~WNHXyMS3f8Voxx0aMM3CKEp5pvbkBte0AU63iwWB7KVPdHNIu6RSmsWQRealt12E~HhzHhicK2UjKfVzUwPsQJXiYcvlVc6d8COF9T49h68h72gIILGeHu-T7JXpTdfMu1lw__"
+                alt="Prakritik Paint" class="mx-auto rounded-lg shadow-lg" style="max-width: 80%; height: auto;">
+            <div class="mt-8 flex justify-center gap-4 flex-wrap">
+                <a href="#products"
+                    class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full text-lg"
+                    data-original="उत्पाद देखे">
+                    उत्पाद देखे
+                </a>
+                <a href="brochure.html" target="_blank"
+                    class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded-full text-lg"
+                    data-original="View Brochure">
+                    View Brochure
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="benefits" class="features py-12">
+        <div class="container mx-auto px-4">
+            <h2 class="text-2xl font-semibold text-center text-gray-800 mb-8" data-original="अष्ट लाभ (Eight Key Benefits)">
+                अष्ट लाभ (Eight Key Benefits)
+            </h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="feature bg-white rounded-lg shadow-md p-6 text-center">
+                    <h3 class="text-lg font-semibold text-green-600 mb-2" data-original="ANTIBACTERIAL">ANTIBACTERIAL</h3>
+                    <p class="text-gray-700" data-original="जीवाणुरोधक">जीवाणुरोधक</p>
+                </div>
+                <div class="feature bg-white rounded-lg shadow-md p-6 text-center">
+                    <h3 class="text-lg font-semibold text-green-600 mb-2" data-original="ANTI FUNGAL">ANTI FUNGAL</h3>
+                    <p class="text-gray-700" data-original="एंटीफंगल">एंटीफंगल</p>
+                </div>
+                <div class="feature bg-white rounded-lg shadow-md p-6 text-center">
+                    <h3 class="text-lg font-semibold text-green-600 mb-2" data-original="ECO-FRIENDLY">ECO-FRIENDLY</h3>
+                    <p class="text-gray-700" data-original="पर्यावरण के अनुकूल">पर्यावरण के अनुकूल</p>
+                </div>
+                <div class="feature bg-white rounded-lg shadow-md p-6 text-center">
+                    <h3 class="text-lg font-semibold text-green-600 mb-2" data-original="NATURAL THERMAL INSULATOR">
+                        NATURAL THERMAL INSULATOR
+                    </h3>
+                    <p class="text-gray-700" data-original="तापरोधक">तापरोधक</p>
+                </div>
+                <div class="feature bg-white rounded-lg shadow-md p-6 text-center">
+                    <h3 class="text-lg font-semibold text-green-600 mb-2" data-original="FREE FROM HEAVY METALS">
+                        FREE FROM HEAVY METALS
+                    </h3>
+                    <p class="text-gray-700" data-original="भारी धातुओं से मुक्त (Pb, Cd, As, Mg)">
+                        भारी धातुओं से मुक्त (Pb, Cd, As, Mg)
+                    </p>
+                </div>
+                <div class="feature bg-white rounded-lg shadow-md p-6 text-center">
+                    <h3 class="text-lg font-semibold text-green-600 mb-2" data-original="NON TOXIC">NON TOXIC</h3>
+                    <p class="text-gray-700" data-original="विषाक्त रहित">विषाक्त रहित</p>
+                </div>
+                <div class="feature bg-white rounded-lg shadow-md p-6 text-center">
+                    <h3 class="text-lg font-semibold text-green-600 mb-2" data-original="ODOURLESS">ODOURLESS</h3>
+                    <p class="text-gray-700" data-original="गंधहीन">गंधहीन</p>
+                </div>
+                <div class="feature bg-white rounded-lg shadow-md p-6 text-center">
+                    <h3 class="text-lg font-semibold text-green-600 mb-2" data-original="COST EFFECTIVE">COST EFFECTIVE</h3>
+                    <p class="text-gray-700" data-original="किफायती">किफायती</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="products" class="product-types py-12 text-center">
+        <div class="container mx-auto px-4">
+            <h2 class="text-2xl font-semibold text-gray-800 mb-4" data-original="कम्पलीट पेंट सॉल्यूशंस">
+                कम्पलीट पेंट सॉल्यूशंस
+            </h2>
+            <p class="text-gray-600 mb-8" data-original="For Interior & Exterior">For Interior & Exterior</p>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 px-4">
+                <div class="product-card bg-gray-50 rounded-lg shadow-md p-6">
+                    <h4 class="text-lg font-semibold text-blue-700 mb-2" data-original="PRIMER">PRIMER</h4>
+                    <p class="text-gray-700" data-original="Coverage: $120~Sqft/Kg$">Coverage: $120~Sqft/Kg$</p>
+                    <p class="text-gray-700" data-original="Finish - Matt: Recoat time: 2hr">Finish - Matt: Recoat time: 2hr</p>
+                    <p class="text-gray-700" data-original="Washability: Low">Washability: Low</p>
+                </div>
+                <div class="product-card bg-gray-50 rounded-lg shadow-md p-6">
+                    <h4 class="text-lg font-semibold text-blue-700 mb-2" data-original="DISTEMPER">DISTEMPER</h4>
+                    <p class="text-gray-700" data-original="Life: 1-2 years">Life: 1-2 years</p>
+                    <p class="text-gray-700" data-original="Coverage: $120-150~Sqft/Kg$">Coverage: $120-150~Sqft/Kg$</p>
+                    <p class="text-gray-700" data-original="Finish - Matt: Recoat time: 6-7hr">Finish - Matt: Recoat time: 6-7hr</p>
+                    <p class="text-gray-700" data-original="Washability: Low">Washability: Low</p>
+                </div>
+                <div class="product-card bg-gray-50 rounded-lg shadow-md p-6">
+                    <h4 class="text-lg font-semibold text-blue-700 mb-2" data-original="INTERIOR EMULSION">INTERIOR EMULSION</h4>
+                    <p class="text-gray-700" data-original="Life: 10 years">Life: 10 years</p>
+                    <p class="text-gray-700" data-original="Coverage: $120-150~Sqft/Kg$">Coverage: $120-150~Sqft/Kg$</p>
+                    <p class="text-gray-700" data-original="Finish - Glossy: Recoat time: 4hr">Finish - Glossy: Recoat time: 4hr</p>
+                    <p class="text-gray-700" data-original="Washability: High">Washability: High</p>
+                </div>
+                <div class="product-card bg-gray-50 rounded-lg shadow-md p-6">
+                    <h4 class="text-lg font-semibold text-blue-700 mb-2" data-original="EXTERIOR EMULSION">EXTERIOR EMULSION</h4>
+                    <p class="text-gray-700" data-original="Life: 10 years">Life: 10 years</p>
+                    <p class="text-gray-700" data-original="Coverage: $120-150~Sqft/Kg$">Coverage: $120-150~Sqft/Kg$</p>
+                    <p class="text-gray-700" data-original="Finish - Glossy: Recoat time: 4hr">Finish - Glossy: Recoat time: 4hr</p>
+                    <p class="text-gray-700" data-original="Washability: High">Washability: High</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact bg-green-100 py-12 text-center rounded-lg shadow-md mb-8">
+        <div class="container mx-auto px-4">
+            <h2 class="text-2xl font-semibold text-green-800 mb-4" data-original="हमसे जुड़ें">हमसे जुड़ें</h2>
+            <div class="contact-info text-gray-700 mb-6">
+                <h3 class="font-semibold text-lg" data-original="SURDIB PRAKRITIK PRODUCTS">SURDIB PRAKRITIK PRODUCTS</h3>
+                <p data-original="MAA LAXMI ENTERPRISES">MAA LAXMI ENTERPRISES</p>
+                <p data-original="Shop No. 5, Indra Nagar Main Road, Hume Pipe, Bhuiyadih (Near Durga Puja Maidan) Jamshedpur.">
+                    Shop No. 5, Indra Nagar Main Road, Hume Pipe, Bhuiyadih (Near Durga Puja Maidan) Jamshedpur.
+                </p>
+                <p data-original="Phone No.: +919031924044, +91 7992309149">Phone No.: +919031924044, +91 7992309149</p>
+            </div>
+            <div class="mt-4">
+                <h3 class="font-semibold text-lg text-green-800 mb-2">
+                    <a href="https://maps.app.goo.gl/ZMdYakrZkXLuD1JU9" target="_blank"
+                        rel="noopener noreferrer" data-original="LOCATE US">
+                        LOCATE US
+                    </a>
+                </h3>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-gray-800 text-white text-center py-4">
+        <p>© Prakritik Paints by MAA LAXMI ENTERPRISES</p>
+    </footer>
+
+    <script>
+        const translateButton = document.getElementById('translate-button');
+        const elementsToTranslate = document.querySelectorAll('[data-original]');
+        const hamburgerButton = document.getElementById('hamburger-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        if (hamburgerButton && mobileMenu) {
+            hamburgerButton.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+            });
+        }
+
+        const translationMap = {
+            "सुरभि प्राकृतिक प्रोडक्ट्स": "Surdib Prakritik Products",
+            "खादी इंडिया": "Khadi India",
+            "प्राकृतिक पेंट अपनाये और अपने घर की शोभा बढाए": "Adopt natural paint and enhance the beauty of your home",
+            "गाय के गोबर से बना प्राकृतिक पेंट. ★ परिवार की सुरक्षा के लिए":
+                "Natural paint made from cow dung. ★ For the safety of the family",
+            "ECO-FRIENDLY COW DUNG PAINT": "ECO-FRIENDLY COW DUNG PAINT",
+            "उत्पाद देखे": "See Products",
+            "View Brochure": "View Brochure",
+            "अष्ट लाभ (Eight Key Benefits)": "Eight Key Benefits",
+            "जीवाणुरोधक": "Antibacterial",
+            "एंटीफंगल": "Anti-fungal",
+            "पर्यावरण के अनुकूल": "Eco-friendly",
+            "तापरोधक": "Thermal insulator",
+            "भारी धातुओं से मुक्त (Pb, Cd, As, Mg)": "Free from heavy metals (Pb, Cd, As, Mg)",
+            "विषाक्त रहित": "Non-toxic",
+            "गंधहीन": "Odorless",
+            "किफायती": "Cost-effective",
+            "कम्पलीट पेंट सॉल्यूशंस": "Complete Paint Solutions",
+            "For Interior & Exterior": "For Interior & Exterior",
+            "PRIMER": "PRIMER",
+            "Coverage: $120~Sqft/Kg$": "Coverage: $120~Sqft/Kg$",
+            "Finish - Matt: Recoat time: 2hr": "Finish - Matt: Recoat time: 2hr",
+            "Washability: Low": "Washability: Low",
+            "DISTEMPER": "DISTEMPER",
+            "Life: 1-2 years": "Life: 1-2 years",
+            "Coverage: $120-150~Sqft/Kg$": "Coverage: $120-150~Sqft/Kg$",
+            "Finish - Matt: Recoat time: 6-7hr": "Finish - Matt: Recoat time: 6-7hr",
+            "Washability: Low": "Washability: Low",
+            "INTERIOR EMULSION": "INTERIOR EMULSION",
+            "Life: 10 years": "Life: 10 years",
+            "Coverage: $120-150~Sqft/Kg$": "Coverage: $120-150~Sqft/Kg$",
+            "Finish - Glossy: Recoat time: 4hr": "Finish - Glossy: Recoat time: 4hr",
+            "Washability: High": "Washability: High",
+            "EXTERIOR EMULSION": "EXTERIOR EMULSION",
+            "Life: 10 years": "Life: 10 years",
+            "Coverage: $120-150~Sqft/Kg$": "Coverage: $120-150~Sqft/Kg$",
+            "Finish - Glossy: Recoat time: 4hr": "Finish - Glossy: Recoat time: 4hr",
+            "Washability: High": "Washability: High",
+            "हमसे जुड़ें": "Connect with us",
+            "SURDIB PRAKRITIK PRODUCTS": "SURDIB PRAKRITIK PRODUCTS",
+            "MAA LAXMI ENTERPRISES": "MAA LAXMI ENTERPRISES",
+            "Shop No. 5, Indra Nagar Main Road, Hume Pipe, Bhuiyadih (Near Durga Puja Maidan) Jamshedpur.":
+                "Shop No. 5, Indra Nagar Main Road, Hume Pipe, Bhuiyadih (Near Durga Puja Maidan) Jamshedpur.",
+            "Phone No.: +919031924044, +91 7992309149": "Phone No.: +919031924044, +91 7992309149",
+            "SCAN THE QR CODE": "SCAN THE QR CODE",
+            "LOCATE US": "LOCATE US"
+        };
+
+        let isEnglish = false; // Keep track of the current language state
+
+        translateButton.addEventListener('click', function () {
+            elementsToTranslate.forEach(element => {
+                const originalText = element.dataset.original;
+                const translatedText = translationMap[originalText];
+                if (translatedText) {
+                    element.textContent = isEnglish ? originalText : translatedText;
+                    element.classList.toggle('translated');
+                }
+            });
+            isEnglish = !isEnglish;
+            translateButton.textContent = isEnglish ? "Translate to Hindi" : "Translate to English";
+        });
+    </script>
+</body>
+</html>
